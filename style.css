@@ -82,6 +82,22 @@ section#home {
     background-color: white;
 }
 
+.personal_img img{
+    width: auto;
+    height: 140%;
+    margin-left: -250px;
+    margin-top: -100px;
+}
+
+.personal_img {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    height: 400px;
+    border-radius: 50%;
+}
+
 /* below are for the about me page */
 section#about {
     box-sizing: border-box;
@@ -153,7 +169,7 @@ section#about {
 
 /* below are for the galart page */
 section#galary {
-    background-color: aquamarine;
+    
 }
 
 /* below are for the interest page */
