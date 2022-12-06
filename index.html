@@ -18,27 +18,35 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="https://www.instagram.com/kaizhangd/"><img src="./images/instagram.png" alt="this is ig social tag"></a>
-                    <a href="https://www.linkedin.com/in/kaidi-zhang-0aa52723a/"><img src="./images/linkedin.png" alt="this is linked in social tag"></a>
+                    <a href="https://www.instagram.com/kaizhangd/"><img src="./images/contact/instagram.png" alt="this is ig social tag"></a>
+                    <a href="https://www.linkedin.com/in/kaidi-zhang-0aa52723a/"><img src="./images/contact/linkedin.png" alt="this is linked in social tag"></a>
                 </li>
             </ul>
         </nav>
         <section id="home">
             <div class="personal_img">
-                <img src="images/homepage.JPG" alt="personal image">
+                <img class="homeImg" src="images/homepage.JPG" alt="personal image">
             </div>
-            <h1>Kai</h1>
-            <p>software engineering student with certificates of software design and machine learning</p>
-            <h2>Skills:</h2>
-            <p>Python | C++ | C# | HTML | CSS | JS | AWS | Firestore</p>
+            <div class="name">
+                <h1>Kai</h1>
+                <p class="degree">software engineering student with certificates of software design and machine learning</p>
+            </div>
+            <div class="skill">
+                <h2>Skills:</h2>
+                <p class="skills">Python | C++ | C# | HTML | CSS | JS | AWS | Firestore</p>
+            </div>
             <a id = "homeLink" href="#contact"><span>Get in touch!</span></a>
         </section>
         
         <section id="about">
             <div class="room">
-                <button class="button">Read Kai's Resume</button>
+                <button class="button">Know Kai More</button>
                 <div class="table">
-                    <h3 class="resume">This will later be changed to my resume picture</h3>
+                    <h3 class="letter">Hi! My name is Kai. 
+                        I am from China, and currently a student from BYU-Idaho, I am majoring Software Engineering with certificates of 
+                        software design and machine learning. I love programming, I started programming since 2020, it has became my favriote thing to
+                        do. It is nice meeting you here, if you wish to know me better, click the "download" button and download my resume! Thank you!
+                        <span><a href="resume/Resume.Oct242022.pdf" download="Kai's Resume">Download</a></span></h3>
                     <div class="table-leg table-leg-1"></div>
                     <div class="table-leg table-leg-2"></div>
                     <div class="table-leg table-leg-3"></div>
@@ -49,27 +57,13 @@
     
         <section id="gallery">
             <div class="gallery">
-                <div class="imageContainer">
-                    <img id="pic1" src="images/gallery/chickenLeg.png" alt="eating chicken leg">
-                </div>
-                <div class="imageContainer">
-                    <img id="pic2" src="images/gallery/cave.png" alt="cave">
-                </div>
-                <div class="imageContainer">
-                    <img id="pic3" src="images/gallery/applePie.png" alt="apple pie">
-                </div>
-                <div class="imageContainer"> 
-                    <img id="pic4" src="images/gallery/repelling.png" alt="repelling">
-                </div>
-                <div class="imageContainer">
-                    <img id="pic5" src="images/gallery/sunset.png" alt="sunset">
-                </div>
-                <div class="imageContainer">
-                    <img id="pic6" src="images/gallery/road66.png" alt="road 66 pictures">
-                </div>
-                <div class="imageContainer">
-                    <img id="pic7" src="images/gallery/LA.png" alt="little tokyo in LA">
-                </div>
+                <img id="pic1" src="images/gallery/chickenLeg.png" alt="eating chicken leg">
+                <img id="pic2" src="images/gallery/cave.png" alt="cave">
+                <img id="pic3" src="images/gallery/applePie.png" alt="apple pie">
+                <img id="pic4" src="images/gallery/repelling.png" alt="repelling">
+                <img id="pic5" src="images/gallery/sunset.png" alt="sunset">
+                <img id="pic6" src="images/gallery/road66.png" alt="road 66 pictures">
+                <img id="pic7" src="images/gallery/LA.png" alt="little tokyo in LA">
             </div>
         </section>
     
@@ -82,7 +76,42 @@
         </section>
     
         <section id="contact">
-            <p>This will be chaneg to contact me page</p>
+            <div id="contactKai">
+                <h2>Contact Kai</h2> 
+                <p>reach out to him, get to know him!</p>
+            </div>
+            <div id="contactIcon">
+                <div>
+                    <img src="./images/contact/gmail.png" alt="email logo">
+                    <p>Email</p>
+                    <p>kaizhangd@gmail.com</p>
+                </div>
+
+                <div>
+                    <img src="./images/contact/telephone-call.png" alt="phone logo">
+                    <p>Phone</p>
+                    <p>(208)-973-5376</p>
+                </div>
+
+                <div>
+                    <img src="./images/contact/github.png" alt="github logo">
+                    <p>GitHub</p>
+                    <a href="https://github.com/KaiTheOcean">See My Work</a>
+                </div>
+
+                <div>
+                    <img src="./images/contact/linkedin.png" alt="linked in logo">
+                    <p>LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/kaidi-zhang-0aa52723a/">Contact Me </a>
+                </div>
+
+                <div>
+                    <img src="./images/contact/instagram.png" alt="ig logo">
+                    <p>Instagram</p>
+                    <a href="https://www.instagram.com/kaizhangd/">Follow Me</a>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.052429293949!2d-111.77999346832087!3d43.81327188329518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b1a7afcfe83%3A0x7812a1b37c29c5a1!2s291%20E%207th%20S%2C%20Rexburg%2C%20ID%2083440!5e0!3m2!1sen!2sus!4v1669861238466!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </div>
 

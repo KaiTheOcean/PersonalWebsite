@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* CSS Smooth scroll */
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -59,7 +59,6 @@ body {
 }
 
 section{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -71,28 +70,41 @@ section{
 
 /* below are for the home page */
 section#home {
-    background-color: white;
-
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .personal_img img{
-    width: auto;
-    height: 140%;
-    margin-left: -250px;
-    margin-top: -100px;
+    width: 95%;
+    height: auto;
+    padding-left: 2%;
+    border-radius: 30px;
+}
+
+section#home .name{
+    grid-column: 2/2;
+    grid-row: 2/3;
+}
+
+section#home .skill{
+    grid-column: 2/2;
+    grid-row: 3/4;
 }
 
 .personal_img {
-    display: inline-block;
+    /* display: inline-block;
     position: relative;
-    width: 400px;
-    overflow: hidden;
-    height: 400px;
-    border-radius: 50%;
+    width: 100%;
+    overflow: hidden; 
+    height: auto;
+    border-radius: 50%; */
+    grid-row: 2/4;
 }
 
 section#home h1{
     font-size: 80px;
+    padding-top: 30px;
 }
 
 section#home p{
@@ -103,6 +115,7 @@ section#home p{
 section#home h2{
     font-size: 30px;
 }
+
 
 #homeLink{
     display: block;
@@ -119,6 +132,9 @@ section#home h2{
     position: relative;
     transition: .35s;
     border-radius: 20px;
+    grid-row: 4/5;
+    grid-column: 2/2;
+    margin-left: 70%;
   }
   
 #homeLink span{
@@ -147,21 +163,16 @@ section#home h2{
   }
 
 /* below are for the about me page */
-section#about {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-
-.room {
+section#about .room {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #fff;
     display: grid;
     place-items: center;
     perspective: 100rem;
 }
 
-.table {
+section#about .table {
     width: 60rem;
     height: 60rem;
     background-image: radial-gradient(
@@ -171,11 +182,12 @@ section#about {
     border-bottom: 2rem solid rgb(215, 231, 227);
     transform: rotateX(70deg) translateZ(10rem);
     transform-style: preserve-3d;
+    transition: transform 2s;
 }
 
 .table-leg {
-    width: 3rem;
-    height: 35rem;
+    width: 2rem;
+    height: 30rem;
     background-color: rgba(29, 113, 116, 0.8);
     position: absolute;
     top: 30rem;
@@ -203,17 +215,43 @@ section#about {
     transform-origin: top;
     border-radius: 1rem;
     border-left: 0.3rem solid rgb(38, 85, 87);
-    border-bottom: 0.3rem solid rgb(38,85,87);
+    border-right: 0.3rem solid rgb(38,85,87);
 }
 
-/* .floor {
-    width: 60rem;
-    height: 60rem;
-    background-image: repeating-conic-gradient
-    (from 90deg, #000 0deg 90deg, #333 90deg 180deg);
-    background-size: 10rem 10rem;
-    border-radius: 50%;
-} */
+section#about .letter{
+    width: 30rem;
+    height: 15rem;
+    background-color: #fff;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #555;
+    box-shadow: 0 0 0.1rem #aaa;
+    margin-left: 23%;
+    margin-top: 30%;
+    transform-origin: bottom;
+    transition: transform 1s;
+    font-size: 18px;
+}
+
+section#about .table.change{
+    transform: rotateX(80deg) translateY(30rem) translateZ(10rem);
+    transition: transform 2s;
+}
+
+section#about .button{
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    color: rgb(252, 35, 7);
+    position: relative;
+    top: 10rem;
+    left: -40rem;
+    border-radius: 50% 50% 0 50%;
+}
+
+section#about .change .letter{
+    transform: rotateX(-90deg);
+    transition:  transform 1s 2s;
+}
 
 /* below are for the galart page */
 section#gallery img{
@@ -223,27 +261,42 @@ section#gallery img{
     border-radius: 10px;
 }
 
-.gallery .imageContainer:hover {
-    transform: scale(110%);
-    transition: transform 300ms ease-in-out;
-    z-index: 1;
-}
-
-.gallery .imageContainer:not(hover) {
-    transform: scale(100%);
-    transition: transform 300ms ease-in-out;
-    z-index: 1;
-}
-
 /* below are for the interest page */
 section#interest {
     background-color: beige;
 }
 
-/* below are for the expeerience page */
+/* below are for the experience page */
 section#experience {
     background-color:cyan;
 }
 
-/* below are for the footer */
+/* below are for the contact page */
+section#contact #contactIcon{
+    display: flex;
+    flex-direction: row;
+}
 
+section#contact img{
+    width: 20%;
+    height: auto;
+    padding-top: 100px;
+}
+
+section#contact #contactKai {
+    padding-top: 100px;
+}
+
+section#contact iframe{
+    padding-top: 50px;
+    width: 90%;
+}
+
+section#contact a{
+    text-decoration: none;
+    color: black;
+}
+
+section#contact a:hover{
+    color: skyblue;
+}
