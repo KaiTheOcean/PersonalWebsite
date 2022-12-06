@@ -177,7 +177,7 @@ section#about .table {
     height: 60rem;
     background-image: radial-gradient(
         rgba(245, 239, 239, 0.9),
-        rgba(77, 99, 101, 0.9));
+        rgba(228, 237, 238, 0.9));
     border-radius: 50%;
     border-bottom: 2rem solid rgb(215, 231, 227);
     transform: rotateX(70deg) translateZ(10rem);
@@ -188,7 +188,7 @@ section#about .table {
 .table-leg {
     width: 2rem;
     height: 30rem;
-    background-color: rgba(29, 113, 116, 0.8);
+    background-color: rgba(192, 192, 192);
     position: absolute;
     top: 30rem;
     left: 28.5rem;
@@ -198,24 +198,24 @@ section#about .table {
     transform: rotateX(-60deg) rotateZ(40deg);
     transform-origin: top;
     border-radius: 5rem 1rem;
-    border-right: 0.3rem solid rgb(38, 85, 87);
-    border-bottom: 0.3rem solid rgb(38,85,87);
+    border-right: 0.3rem solid rgb(192, 192, 192);
+    border-bottom: 0.3rem solid rgb(192, 192, 192);
 }
 
 .table-leg-2 {
     transform: rotateX(-60deg) rotateZ(-40deg);
     transform-origin: top;
     border-radius: 1rem 5rem;
-    border-left: 0.3rem solid rgb(38, 85, 87);
-    border-bottom: 0.3rem solid rgb(38,85,87);
+    border-left: 0.3rem solid rgb(192, 192, 192);
+    border-bottom: 0.3rem solid rgb(192, 192, 192);
 }
 
 .table-leg-3 {
     transform: rotateX(-140deg);
     transform-origin: top;
     border-radius: 1rem;
-    border-left: 0.3rem solid rgb(38, 85, 87);
-    border-right: 0.3rem solid rgb(38,85,87);
+    border-left: 0.3rem solid rgb(192, 192, 192);
+    border-right: 0.3rem solid rgb(192, 192, 192);
 }
 
 section#about .letter{
@@ -238,14 +238,14 @@ section#about .table.change{
 }
 
 section#about .button{
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     background-color: #eee;
-    color: rgb(252, 35, 7);
     position: relative;
     top: 10rem;
     left: -40rem;
     border-radius: 50% 50% 0 50%;
+    font-size: 20px;
 }
 
 section#about .change .letter{
