@@ -11,6 +11,7 @@
     <div class="container">
         <nav class="navbar">
             <ul>
+                <button class="like" onclick="changeImage('./images/like/after.png')"><img class="likeImg" src="./images/like/before.png" alt="a thumbsup logo"></button>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#gallery">Galary</a></li>
@@ -44,7 +45,7 @@
                 <div class="table">
                     <h3 class="letter">Hi! My name is Kai. 
                         I am from China, and currently a student from BYU-Idaho, I am majoring Software Engineering with certificates of 
-                        software design and machine learning. I love programming, I started programming since 2020, it has became my favriote thing to
+                        software design and machine learning. I love programming, I started programming since 2020, it has became my favorite thing to
                         do. It is nice meeting you here, if you wish to know me better, click the "download" button and download my resume! Thank you!
                         <span><a href="resume/Resume.Oct242022.pdf" download="Kai's Resume">Download</a></span></h3>
                     <div class="table-leg table-leg-1"></div>
@@ -56,15 +57,59 @@
         </section>
     
         <section id="gallery">
-            <div class="gallery">
-                <img id="pic1" src="images/gallery/chickenLeg.png" alt="eating chicken leg">
-                <img id="pic2" src="images/gallery/cave.png" alt="cave">
-                <img id="pic3" src="images/gallery/applePie.png" alt="apple pie">
-                <img id="pic4" src="images/gallery/repelling.png" alt="repelling">
-                <img id="pic5" src="images/gallery/sunset.png" alt="sunset">
-                <img id="pic6" src="images/gallery/road66.png" alt="road 66 pictures">
-                <img id="pic7" src="images/gallery/LA.png" alt="little tokyo in LA">
-            </div>
+            <div class="imgContainer">
+                <div class="mySlides">
+                  <img class="primaryImg" src="./images/gallery/LA.png">
+                </div>
+              
+                <div class="mySlides">
+                  <img class="primaryImg" src="./images/gallery/repelling.png">
+                </div>
+              
+                <div class="mySlides">
+                  <img class="primaryImg" src="./images/gallery/sunset.png">
+                </div>
+                  
+                <div class="mySlides">
+                  <img class="primaryImg" src="./images/gallery/road66.png">
+                </div>
+              
+                <div class="mySlides">
+                  <img class="primaryImg" src="./images/gallery/cave.png">
+                </div>
+                  
+                <div class="mySlides">
+                  <img class="primaryImg" src="./images/gallery/applePie.png">
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="./images/gallery/LA.png" onclick="currentSlide(1)" alt="Little Tokyo in LA">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./images/gallery/repelling.png" onclick="currentSlide(2)" alt="Did repelling in Utah">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./images/gallery/sunset.png" onclick="currentSlide(3)" alt="Watch sunset with my cusion">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./images/gallery/road66.png" onclick="currentSlide(4)" alt="Visited the end of Road 66 at Santa Monica Beach">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./images/gallery/cave.png" onclick="currentSlide(5)" alt="Went on a hike with my family and we found a cave">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="./images/gallery/applePie.png" onclick="currentSlide(6)" alt="I LOVE applePie!">
+                  </div>
+                </div>
+              </div>
         </section>
     
         <section id="interest">
