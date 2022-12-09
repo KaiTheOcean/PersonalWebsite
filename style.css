@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@media screen and (min-width: 900px) {
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
     margin: 0;
@@ -6,8 +7,6 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
     line-height: 1.6;
     height: 100vh;
     overflow: hidden;
@@ -30,7 +29,7 @@ body {
     display: flex;
     width: 100%;
     height: 60px;
-    background: rgba(242, 237, 237, 0.7);
+    background-color: rgba(242, 237, 237, 0.7);
 }
 
 .like{
@@ -67,7 +66,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: skyblue;
+    color: whitesmoke;
 }
 
 section{
@@ -85,6 +84,7 @@ section#home {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    background-color: rgb(10 25 47 / 85%);
 }
 
 .personal_img img{
@@ -111,15 +111,18 @@ section#home .skill{
 section#home h1{
     font-size: 80px;
     padding-top: 30px;
+    color: #ccd6f6;
 }
 
 section#home p{
     font-size: 25px;
     padding-bottom: 20px;
+    color: #a8b2d1;
 }
 
 section#home h2{
     font-size: 30px;
+    color: #ccd6f6;
 }
 
 
@@ -129,10 +132,9 @@ section#home h2{
     height: 40px;
     line-height: 40px;
     font-size: 18px;
-    font-family: sans-serif;
     text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
+    color: #a8b2d1;
+    border: 2px solid white;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
@@ -148,23 +150,23 @@ section#home h2{
     z-index: 1;
   }
   
-  #homeLink:after{
+#homeLink:after{
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: #040001;
+    background: rgba(242, 237, 237, 0.7);
     transition: .35s;
     border-radius: 18px;
   }
   
-  #homeLink:hover{
-    color: white;
+#homeLink:hover{
+    color: black;
   }
   
-  #homeLink:hover:after{
+#homeLink:hover:after{
     width: 100%;
   }
 
@@ -176,6 +178,7 @@ section#about .room {
     display: grid;
     place-items: center;
     perspective: 100rem;
+    background-color: rgb(10 25 47 / 85%);
 }
 
 section#about .table {
@@ -262,6 +265,10 @@ section#about .change .letter{
 }
 
 /* below are for the galart page */
+section#gallery {
+    background-color: rgb(10 25 47 / 85%);
+}
+
 section#gallery .row img{
     width: 280px;
     height: 320px;
@@ -277,13 +284,13 @@ section#gallery .primaryImg{
 }
   
   /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+.cursor {
     cursor: pointer;
   }
   
   /* Next & previous buttons */
-  .prev,
-  .next {
+.prev,
+.next {
     cursor: pointer;
     top: 40%;
     width: auto;
@@ -299,13 +306,13 @@ section#gallery .primaryImg{
   }
 
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+.prev:hover,
+.next:hover {
     background-color: lightgray;
   }
   
   /* Container for image text */
-  .caption-container {
+.caption-container {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
@@ -313,36 +320,77 @@ section#gallery .primaryImg{
   }
     
   /* Six columns side by side */
-  .column {
+.column {
     float: left;
     width: 16.66%;
   }
   
   /* Add a transparency effect for thumnbail images */
-  .demo {
+.demo {
     opacity: 0.6;
   }
   
-  .active,
-  .demo:hover {
+.active,
+.demo:hover {
     opacity: 1;
   }
 
 /* below are for the interest page */
-section#interest {
-    background-color: beige;
+section#project {
+    background-color: rgb(10 25 47 / 85%);
+}
+
+section#project iframe{
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 70%;
+    height: 70%;
 }
 
 /* below are for the experience page */
-section#experience {
-    background-color:cyan;
+section#experience{
+    background-color: rgb(10 25 47 / 85%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section#experience .experienceDiv{
+    grid-column: 2/3;
+    margin-top: 15%;
+}
+
+section#experience button{
+    font-size: 100%;
+    border-radius: 20px 20px;
+    width: 100%;
+    background-color: rgba(242, 237, 237, 0.7);
+}
+
+section#experience p{
+    color: #ccd6f6;
+}
+
+section#experience li{
+    color: #a8b2d1;
 }
 
 /* below are for the contact page */
 section#contact {
     text-align: center;
+    background-color: rgb(10 25 47 / 85%);
 }
 
+section#contact h2{
+    font-size: 50px;
+}
+
+section#contact h2, h3{
+    color: #ccd6f6;
+}
+
+section#contact p{
+    color: #a8b2d1;
+}
 section#contact #contactIcon{
     display: flex;
     flex-direction: row;
@@ -356,6 +404,7 @@ section#contact img{
 
 section#contact #contactKai {
     padding-top: 100px;
+    color: white;
 }
 
 section#contact iframe{
@@ -365,10 +414,11 @@ section#contact iframe{
 
 section#contact a{
     text-decoration: none;
-    color: black;
+    color: #a8b2d1;
     font-family: 'Lobster', cursive;
 }
 
 section#contact a:hover{
     color: skyblue;
+}
 }
