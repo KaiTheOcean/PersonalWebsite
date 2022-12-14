@@ -1,5 +1,5 @@
-@media screen and (min-width: 900px) {
-    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@media screen and (min-width: 1000px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -35,9 +35,11 @@ body {
 .like{
     border: none;
     background: none;
+    padding-left: 5%;
 }
 
 .navbar ul {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     list-style: none;
     width: 100%;
@@ -45,6 +47,7 @@ body {
 }
 
 .navbar ul li{
+    font-family: 'Roboto', sans-serif;
     margin: 0 2rem;
     padding: 1rem;
 }
@@ -80,6 +83,7 @@ section{
 
 /* below are for the home page */
 section#home {
+    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -171,6 +175,10 @@ section#home h2{
   }
 
 /* below are for the about me page */
+section#about {
+    font-family: 'Roboto', sans-serif;
+}
+
 section#about .room {
     width: 100%;
     height: 100vh;
@@ -243,6 +251,10 @@ section#about .letter{
     text-indent: 1rem;
 }
 
+.resume{
+    color: blue;
+}
+
 section#about .table.change{
     transform: rotateX(80deg) translateY(30rem) translateZ(10rem);
     transition: transform 2s;
@@ -267,6 +279,7 @@ section#about .change .letter{
 /* below are for the galart page */
 section#gallery {
     background-color: rgb(10 25 47 / 85%);
+    font-family: 'Roboto', sans-serif;
 }
 
 section#gallery .row img{
@@ -347,8 +360,13 @@ section#project iframe{
     height: 70%;
 }
 
+#youtube{
+    border:0;
+}
+
 /* below are for the experience page */
 section#experience{
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(10 25 47 / 85%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -376,12 +394,13 @@ section#experience li{
 
 /* below are for the contact page */
 section#contact {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color: rgb(10 25 47 / 85%);
 }
 
 section#contact h2{
-    font-size: 50px;
+    font-size: 100px;
 }
 
 section#contact h2, h3{

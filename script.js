@@ -6,7 +6,10 @@ document.querySelector(".button").addEventListener("click", ()=> {
 // this is for like button
 let img = document.querySelector(".likeImg");
 let file = localStorage.getItem('value')
-// img.setAttribute("src", file)
+if (file != null)
+{
+  img.setAttribute("src", file)
+}
 
 function changeImage(fileName) {
     let img = document.querySelector(".likeImg");

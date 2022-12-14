@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kai's Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="small.css">
+    <link rel="stylesheet" href="medium.css">
 </head>
 <body>
     <div class="container">
         <nav class="navbar">
+          <button class="like" onclick="changeImage('./images/like/after.png')"><img class="likeImg" src="./images/like/before.png" alt="a thumbsup logo"></button>
             <ul>
-                <button class="like" onclick="changeImage('./images/like/after.png')"><img class="likeImg" src="./images/like/before.png" alt="a thumbsup logo"></button>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav" href="#home">Home</a></li>
+                <li><a class="nav" href="#about">About Me</a></li>
+                <li><a class="nav" href="#project">Project</a></li>
+                <li><a class="nav" href="#experience">Experience</a></li>
+                <li><a class="nav" href="#gallery">Gallery</a></li>
+                <li><a class="nav" href="#contact">Contact</a></li>
                 <li>
-                    <a href="https://www.instagram.com/kaizhangd/"><img src="./images/contact/instagram.png" alt="this is ig social tag"></a>
-                    <a href="https://www.linkedin.com/in/kaidi-zhang-0aa52723a/"><img src="./images/contact/linkedin.png" alt="this is linked in social tag"></a>
+                    <a href="https://www.instagram.com/kaizhangd/"><img class="igImg" src="./images/contact/instagram.png" alt="this is ig social tag"></a>
+                    <a href="https://www.linkedin.com/in/kaidi-zhang-0aa52723a/"><img class="linkedinImg" src="./images/contact/linkedin.png" alt="this is linked in social tag"></a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +49,7 @@
                         I am from China, and currently a student from BYU-Idaho, I am majoring Software Engineering with certificates of 
                         software design and machine learning. I love programming, I started programming since 2020, it has became my favorite thing to
                         do. It is nice meeting you here, if you wish to know me better, click the "download" button and download my resume! Thank you!
-                        <span><a href="resume/Resume.Oct242022.pdf" download="Kai's Resume">Download</a></span></h3>
+                        <span><a class="resume" href="resume/Resume.Oct242022.pdf" download="Kai's Resume">Download</a></span></h3>
                     <div class="table-leg table-leg-1"></div>
                     <div class="table-leg table-leg-2"></div>
                     <div class="table-leg table-leg-3"></div>
@@ -57,7 +59,7 @@
         </section>
 
         <section id="project">
-          <iframe src="https://www.youtube.com/embed/xl2TynTSnq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="youtube" src="https://www.youtube.com/embed/q28W6vgqAB4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     
         <section id="experience">
@@ -104,27 +106,27 @@
         <section id="gallery">
             <div class="imgContainer">
                 <div class="mySlides">
-                  <img class="primaryImg" src="./images/gallery/LA.png">
+                  <img class="primaryImg" src="./images/gallery/LA.png" alt="la picture">
                 </div>
               
                 <div class="mySlides">
-                  <img class="primaryImg" src="./images/gallery/repelling.png">
+                  <img class="primaryImg" src="./images/gallery/repelling.png" alt="repelling picture">
                 </div>
               
                 <div class="mySlides">
-                  <img class="primaryImg" src="./images/gallery/sunset.png">
+                  <img class="primaryImg" src="./images/gallery/sunset.png" alt="sunset picture">
                 </div>
                   
                 <div class="mySlides">
-                  <img class="primaryImg" src="./images/gallery/road66.png">
+                  <img class="primaryImg" src="./images/gallery/road66.png" alt="road 66 picture">
                 </div>
               
                 <div class="mySlides">
-                  <img class="primaryImg" src="./images/gallery/cave.png">
+                  <img class="primaryImg" src="./images/gallery/cave.png" alt="cave in China picture">
                 </div>
                   
                 <div class="mySlides">
-                  <img class="primaryImg" src="./images/gallery/applePie.png">
+                  <img class="primaryImg" src="./images/gallery/applePie.png" alt="applePie picture">
                 </div>
                   
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -160,13 +162,13 @@
         <section id="contact">
             <div id="contactKai">
                 <h2>Contact Kai</h2> 
-                <p>reach out to him, get to know him!</p>
+                <p class="reachout">reach out to him, get to know him!</p>
             </div>
             <div id="contactIcon">
-                <div>
+                <div id="email">
                     <img src="./images/contact/gmail.png" alt="email logo">
                     <h3>Email</h3>
-                    <p>kaizhangd@gmail.com</p>
+                    <p class="email">kaizhangd@gmail.com</p>
                 </div>
 
                 <div>
